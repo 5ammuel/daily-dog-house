@@ -1,3 +1,9 @@
 main {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+div {
+    display: flex;
+    width: 40% vmin;
+
+}
