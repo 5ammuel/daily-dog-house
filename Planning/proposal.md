@@ -1,72 +1,41 @@
-# Battlejack Blitz Proposal
+# The Daily Dog House
 
 ## Project Description
 
-My app is called Battlejack Blitz.  It's a card game app for people who enjoy blackjack, but don't enjoy the concept of gambling.  Users can play Blackjack against the computer to score points called "hits", and after enough hits, they will win or lose the game by T.K.O!  In the future I'd like to add chip tunes and some quality of life functionality like additional interface buttons.
+My app is called The Daily Dog House.  It's a random image app for people who enjoy the occasional canid candid!  Users can view random doggos one at a time, or turn things up to 11 by viewing, 11 dogs at a time!  In the future I'd like to add some quality of life functionality like additional interface buttons.
 
 
 ## Wireframes
 
 ### Home
 
-![Home Page](https://i.imgur.com/7DbHqys.png)
+![Home Page]()
 
 ### Game
 
-![Game Page](https://i.imgur.com/XNmyLyG.png)
+![Game Page]()
 
 
 ### MVP User Stories
 
 _**MVP User Stories**_
-- _As a user, I want to be able to use the available interface to play blackjack, so that I can experience what the app offers in its most basic iteration._
-- _As a user, I want to have the cards display their information in a way that's simple and easy to read, so the app is more accessible, and intuitive._
-- _As a user, I want the cards that are displayed to be random, so that the experience is fair._
+- _As a user, I want to be able to use the available interface to view random dogs, so that I can experience what the app offers in its most basic iteration._
+- _As a user, I want to have the dogs' images display in a way that's simple and easy to read, so the app is more accessible, and intuitive._
+- _As a user, I want the images that are displayed to be random, so that the experience is always fresh and exciting._
 
 _**Post MVP Stretch Goals**_
-- _As a user, I would like to have audio feedback from game features, so that I can better enjoy the novelty of the experience_
-- _As a user, I would like to be able to start a new game with a "reset" or "new game" button, so that I can easily start a new game._
-- _As a user, I would like to see some animations, so that the visual representation of the game is more entertaining._
+- _As a user, I would like to have additional search features, so that I can better navigate the application's stockpile of dog images_
+- _As a user, I would like to be able to save favorite images, so that I can easily see them again._
+- _As a user, I would like to see some .gif animations, so that I can see the dogs doing what they do best in short, easily viewable clips._
 
 ## API
-http://deckofcardsapi.com/
+https://dog.ceo/api/breeds/image/random
 
-#### Shuffle the Cards:
-https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1
-
-##### Response:
+#### Example Response:
 {
-    "success": true,
-    "deck_id": "3p40paa87x90",
-    "shuffled": true,
-    "remaining": 52
+message: "https://images.dog.ceo/breeds/saluki/n02091831_749.jpg",
+status: "success"
 }
-
-#### Draw a Card:
-https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2
-
-##### Response:
-{
-    "success": true,
-    "cards": [
-        {
-            "image": "https://deckofcardsapi.com/static/img/KH.png",
-            "value": "KING",
-            "suit": "HEARTS",
-            "code": "KH"
-        },
-        {
-            "image": "https://deckofcardsapi.com/static/img/8C.png",
-            "value": "8",
-            "suit": "CLUBS",
-            "code": "8C"
-        }
-    ],
-    "deck_id":"3p40paa87x90",
-    "remaining": 50
-}
-
 
 ## Component Hierarchy *
-![Component Sheet](https://i.imgur.com/2bnqSZA.png)
-*Note: Welcome is a child of App.
+![Component Sheet]()
